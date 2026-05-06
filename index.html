@@ -218,6 +218,48 @@
   table.scenarios td:nth-child(2) { width: 44%; }
   table.scenarios td:nth-child(3) { width: 52%; }
 
+  /* Forms downloads */
+  .forms_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 14px;
+    margin-top: 0.5em;
+    max-width: 720px;
+  }
+  .form_card {
+    border: 0.5pt solid #ccc;
+    background: #fafafa;
+    padding: 12px 14px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .form_card .form_title {
+    font-variant: small-caps;
+    letter-spacing: 0.04em;
+    font-weight: 600;
+    font-size: 0.95em;
+  }
+  .form_card .form_meta {
+    font-size: 0.85em;
+    font-style: italic;
+    color: #555;
+    margin: 0;
+  }
+  .form_card a.download {
+    align-self: flex-start;
+    display: inline-block;
+    margin-top: 4px;
+    padding: 4px 10px;
+    font-size: 0.85em;
+    background: #2a4d3a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+  .form_card a.download:hover { background: #1f3a2b; }
+
   em.term { font-style: italic; }
   span.smallcaps { font-variant: small-caps; letter-spacing: 0.05em; }
 
@@ -532,6 +574,24 @@ overlook. Recording delirium in PCOC V4 is the prompt to act on it
     </tr>
   </tbody>
 </table>
+</section>
+
+<section>
+<h2>Forms</h2>
+<p>The two ESAS forms in use at Kerry SPCU. Click to download.</p>
+
+<div class="forms_grid">
+  <div class="form_card">
+    <span class="form_title">Clinician documenting form</span>
+    <p class="form_meta">PCOC V4 Irish Inpatient Unit Form. PDF.</p>
+    <a class="download" href="forms/clinician_facing_esas.pdf" download>Download</a>
+  </div>
+  <div class="form_card">
+    <span class="form_title">Patient facing form</span>
+    <p class="form_meta">ESAS scale with smiley anchors. PDF.</p>
+    <a class="download" href="forms/patient_facing_smiley_face.pdf" download>Download</a>
+  </div>
+</div>
 </section>
 
 <footer class="site">
