@@ -197,14 +197,19 @@
   }
   .score_stack .lbl { color: #333; }
 
-  .cuts { font-size: 0.95em; margin: 0.4em 0; }
+  .cuts { font-size: 0.95em; margin: 0.5em 0; max-width: 540px; }
+  .cuts .total { font-weight: 600; margin-bottom: 4px; display: block; }
+  .cuts .row { display: flex; align-items: center; padding: 2px 0; }
   .cuts .pill {
-    display: inline-block; padding: 2px 8px; margin-right: 5px;
+    display: inline-block; min-width: 92px; padding: 3px 10px;
+    margin-right: 12px; flex-shrink: 0;
     font-weight: 600; font-variant-numeric: tabular-nums; color: #fff;
+    text-align: center;
   }
   .cuts .pill.red   { background: #F23A00; }
   .cuts .pill.amber { background: #FDAE1F; }
   .cuts .pill.green { background: #76923C; }
+  .cuts .caveat { display: block; margin-top: 6px; font-style: italic; color: #555; }
 
   /* Scenarios */
   table.scenarios { font-size: 0.9em; line-height: 1.4; }
@@ -264,8 +269,8 @@
       <source src="videos/pcoc_v4_kerry_walkthrough.mp4" type="video/mp4">
       Your browser does not support video playback.
     </video>
-    <h3>Kerry walkthrough</h3>
-    <p>The full slide-by-slide explanation of PCOC V4 ESAS PCOC and the 4AT, recorded for KSPCU.</p>
+    <h3>PCOC V4 walkthrough</h3>
+    <p>Slide-by-slide review of ESAS PCOC and the 4AT.</p>
   </div>
 </div>
 
@@ -276,8 +281,8 @@
       <source src="videos/4AT_explainer.mp4" type="video/mp4">
       Your browser does not support video playback.
     </video>
-    <h3>4AT explainer</h3>
-    <p>Two-minute primer on the four components of the 4AT, scoring, and cut-points.</p>
+    <h3>4AT</h3>
+    <p>Components, scoring, cut-points.</p>
   </div>
 
   <div class="video-card">
@@ -286,13 +291,7 @@
       Your browser does not support video playback.
     </video>
     <h3>Delirium awareness</h3>
-    <p>Recognising delirium in palliative care, including the easy-to-miss hypoactive presentation.</p>
-  </div>
-
-  <div class="video-card">
-    <div class="placeholder">PINCHES ME video to be added</div>
-    <h3>PINCHES ME</h3>
-    <p>Working through reversible causes of delirium using the HSE delirium booklet mnemonic. Coming when the booklet is to hand.</p>
+    <p>Recognition in palliative care. Hypoactive presentation in particular.</p>
   </div>
 </div>
 </section>
@@ -473,11 +472,11 @@ overlook. Recording delirium in PCOC V4 is the prompt to act on it
 </table>
 
 <div class="cuts">
-  <strong>Total 0&ndash;12.</strong>
-  <span class="pill red">4 or more</span> possible delirium &nbsp;
-  <span class="pill amber">1 to 3</span> cognitive impairment without clear delirium &nbsp;
-  <span class="pill green">0</span> delirium unlikely. &nbsp;
-  <em style="color:#555;">A positive 4AT is not diagnostic. Clinical judgement remains essential.</em>
+  <span class="total">Total 0&ndash;12</span>
+  <div class="row"><span class="pill red">4 or more</span> Possible delirium</div>
+  <div class="row"><span class="pill amber">1 to 3</span> Cognitive impairment without clear delirium</div>
+  <div class="row"><span class="pill green">0</span> Delirium unlikely</div>
+  <span class="caveat">A positive 4AT is not diagnostic. Clinical judgement remains essential.</span>
 </div>
 </section>
 
@@ -539,7 +538,6 @@ overlook. Recording delirium in PCOC V4 is the prompt to act on it
   Kerry Specialist Palliative Care Unit ·
   Sources: PCOC V4 Clinical Manual (1 Nov 2025); FAQ ESAS PCOC; FAQ Delirium;
   V4 Inpatient Unit Form v1.1.
-  &nbsp;|&nbsp; Coming next: PINCHES ME video, once the HSE delirium booklet is to hand.
 </footer>
 
 </main>

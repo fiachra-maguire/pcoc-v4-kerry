@@ -10,10 +10,9 @@ pcoc-v4-kerry/
 ├── smileys.pdf                ← patient-facing ESAS scale (vector)
 ├── smileys_print.png          ← raster fallback for the scale
 └── videos/
-    ├── pcoc_v4_kerry_walkthrough.mp4   ← full slide walkthrough (~97 MB)
-    ├── 4AT_explainer.mp4               ← 4AT primer (~6 MB)
-    ├── delirium_awareness.mp4          ← delirium recognition (~15 MB)
-    └── (PINCHES ME video, to be added)
+    ├── pcoc_v4_kerry_walkthrough.mp4   ← slide walkthrough (~97 MB)
+    ├── 4AT_explainer.mp4               ← 4AT (~6 MB)
+    └── delirium_awareness.mp4          ← delirium recognition (~15 MB)
 ```
 
 Total size: ~120 MB. Within GitHub Pages limits.
@@ -41,10 +40,17 @@ Total size: ~120 MB. Within GitHub Pages limits.
 
 ## Updating later
 
-Drop a new MP4 into `videos/` and edit `index.html`:
+Drop new MP4s into `videos/`, edit `index.html`, and push the change. New video cards follow the existing pattern:
 
-- Replace the placeholder block in the third video card (the PINCHES ME one) with a `<video controls preload="metadata"><source src="videos/pinches_me.mp4" type="video/mp4"></video>` once that video is ready.
-- Push the change.
+```html
+<div class="video-card">
+  <video controls preload="metadata">
+    <source src="videos/your_file.mp4" type="video/mp4">
+  </video>
+  <h3>Title</h3>
+  <p>One-line description.</p>
+</div>
+```
 
 ## Privacy note
 
