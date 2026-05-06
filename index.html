@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PCOC Version 4: ESAS PCOC and the 4AT — Kerry Specialist Palliative Care Unit</title>
+<style>
+  /* Web-first layout. Print styles preserved at the bottom. */
+
+  * { box-sizing: border-box; }
+  html { font-size: 17px; }
+  body {
+    font-family: "ET Book", "EB Garamond", "Iowan Old Style", "Palatino Linotype",
+                 Palatino, Georgia, serif;
+    color: #111;
+    line-height: 1.5;
+    margin: 0;
+    background: #fafaf8;
+    hyphens: auto;
+  }
+  main {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 32px 28px 64px 28px;
+    background: #fff;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  }
+
+  header.site {
+    border-bottom: 0.5pt solid #ccc;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+  }
+  .eyebrow {
+    font-size: 0.85em; font-style: italic; color: #666;
+    letter-spacing: 0.04em;
+  }
+  h1 { font-weight: 400; font-size: 2.2em; line-height: 1.1; margin: 0.1em 0 0.1em 0; }
+  h1 .sub { display: block; font-size: 1.1em; color: #444; font-style: italic; margin-top: 0.3em; font-weight: 300; }
+  .lede { font-size: 1.05em; margin-top: 0.6em; color: #222; max-width: 680px; }
+
+  h2 {
+    font-weight: 400; font-size: 1.15em;
+    font-variant: small-caps; letter-spacing: 0.05em;
+    margin: 1.6em 0 0.4em 0;
+    border-bottom: 0.4pt solid #888;
+    padding-bottom: 2px;
+  }
+  h3 {
+    font-weight: 400; font-style: italic;
+    font-size: 1em; margin: 0.8em 0 0.2em 0;
+  }
+  p { margin: 0.4em 0 0.7em 0; max-width: 720px; }
+
+  /* Videos section */
+  .videos { margin: 0 0 1.2em 0; }
+  h3.video_section {
+    font-style: normal;
+    font-variant: small-caps;
+    letter-spacing: 0.06em;
+    font-size: 1em;
+    color: #333;
+    margin: 1.2em 0 0.3em 0;
+    border-bottom: 0.3pt solid #ccc;
+    padding-bottom: 2px;
+  }
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+    margin-top: 0.5em;
+  }
+  .video-card {
+    border: 0.5pt solid #ddd;
+    background: #f8f8f6;
+    padding: 10px;
+    border-radius: 2px;
+  }
+  .video-card video, .video-card .placeholder {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    background: #222;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .video-card .placeholder {
+    background: #eee;
+    display: flex; align-items: center; justify-content: center;
+    color: #888; font-style: italic; text-align: center;
+    padding: 1em; font-size: 0.9em;
+  }
+  .video-card h3 {
+    margin: 0 0 4px 0;
+    font-size: 0.95em;
+    font-style: normal;
+    font-variant: small-caps;
+    letter-spacing: 0.04em;
+  }
+  .video-card p {
+    margin: 0;
+    font-size: 0.85em;
+    font-style: italic;
+    color: #555;
+  }
+
+  /* Aside: small italic boxed paragraph */
+  aside {
+    display: block;
+    font-size: 0.85em;
+    line-height: 1.4;
+    font-style: italic;
+    color: #444;
+    border-left: 0.4pt solid #aaa;
+    padding: 4px 0 4px 12px;
+    margin: 0.4em 0 0.8em 8px;
+    max-width: 720px;
+  }
+
+  /* Callout */
+  .callout {
+    border: 0.5pt solid #999;
+    background: #fafafa;
+    padding: 10px 14px;
+    margin: 0.6em 0 0.8em 0;
+    font-size: 0.95em;
+    line-height: 1.45;
+    max-width: 720px;
+  }
+  .callout strong.caps { font-variant: small-caps; letter-spacing: 0.05em; }
+
+  /* Tables */
+  table { border-collapse: collapse; width: 100%; font-size: 0.9em; margin: 0.4em 0 0.7em 0; }
+  th, td { text-align: left; vertical-align: top; padding: 6px 10px 6px 0; }
+  thead th { border-bottom: 0.6pt solid #222; font-weight: 600; font-style: normal; }
+  tbody tr td { border-top: 0.3pt solid #ddd; }
+  tbody tr:first-child td { border-top: 0.4pt solid #444; }
+  tbody tr:last-child td { border-bottom: 0.4pt solid #444; }
+
+  /* Symptoms list */
+  ul.symptoms {
+    columns: 2; column-gap: 24px;
+    list-style: none; margin: 0.3em 0; padding: 0;
+    font-size: 0.95em;
+    max-width: 680px;
+  }
+  ul.symptoms li { break-inside: avoid; padding-left: 0.9em; text-indent: -0.9em; line-height: 1.45; }
+  ul.symptoms li::before { content: "·  "; }
+  .reverse { font-style: italic; }
+  .reverse::after { content: " *"; font-style: normal; color: #555; }
+  .new_mark { font-weight: 600; }
+
+  .legend { font-size: 0.85em; color: #555; font-style: italic; margin-top: 0.3em; }
+
+  /* Patient facing scale image */
+  .scale_image {
+    display: block;
+    width: 100%; max-width: 580px;
+    height: auto;
+    margin: 0.5em 0;
+    border: 0.3pt solid #ccc;
+  }
+
+  /* Kerry response gradient */
+  .scale_kerry { width: 100%; max-width: 720px; margin: 0.5em 0; font-size: 0.9em; }
+  .scale_kerry .ticks {
+    display: grid; grid-template-columns: repeat(11, 1fr);
+    border-top: 0.4pt solid #222; border-bottom: 0.4pt solid #222;
+  }
+  .scale_kerry .ticks span {
+    text-align: center; padding: 6px 0;
+    font-weight: 600; font-variant-numeric: tabular-nums;
+    border-right: 0.3pt solid rgba(255,255,255,0.5);
+  }
+  .scale_kerry .ticks span:last-child { border-right: 0; }
+  .scale_kerry .ticks .z0 { background: #76923C; color: #fff; }
+  .scale_kerry .ticks .z1 { background: #8EB149; color: #fff; }
+  .scale_kerry .ticks .z2 { background: #FFCC00; color: #222; }
+  .scale_kerry .ticks .z3 { background: #FDAE1F; color: #fff; }
+  .scale_kerry .ticks .z4 { background: #E36C0A; color: #fff; }
+  .scale_kerry .ticks .z5 { background: #F23A00; color: #fff; }
+  .scale_kerry .actions {
+    display: grid; grid-template-columns: 4fr 4fr 3fr;
+    margin-top: 6px; font-style: italic; color: #333; font-size: 0.85em;
+  }
+  .scale_kerry .actions div { padding-right: 10px; }
+  .scale_kerry .actions div + div { border-left: 0.3pt solid #bbb; padding-left: 10px; }
+
+  /* 4AT */
+  table.fourat td:first-child { width: 16%; font-style: italic; }
+  table.fourat td:nth-child(2) { width: 50%; }
+  table.fourat td:last-child { width: 34%; }
+  .score_stack > div { display: flex; align-items: baseline; padding: 1px 0; line-height: 1.3; }
+  .score_stack .num {
+    font-weight: 600; width: 22px; flex-shrink: 0; text-align: right;
+    font-variant-numeric: tabular-nums; padding-right: 8px;
+  }
+  .score_stack .lbl { color: #333; }
+
+  .cuts { font-size: 0.95em; margin: 0.4em 0; }
+  .cuts .pill {
+    display: inline-block; padding: 2px 8px; margin-right: 5px;
+    font-weight: 600; font-variant-numeric: tabular-nums; color: #fff;
+  }
+  .cuts .pill.red   { background: #F23A00; }
+  .cuts .pill.amber { background: #FDAE1F; }
+  .cuts .pill.green { background: #76923C; }
+
+  /* Scenarios */
+  table.scenarios { font-size: 0.9em; line-height: 1.4; }
+  table.scenarios td { padding: 8px 12px 8px 0; }
+  table.scenarios td:first-child { width: 4%; color: #666; font-style: italic; }
+  table.scenarios td:nth-child(2) { width: 44%; }
+  table.scenarios td:nth-child(3) { width: 52%; }
+
+  em.term { font-style: italic; }
+  span.smallcaps { font-variant: small-caps; letter-spacing: 0.05em; }
+
+  footer.site {
+    margin-top: 32px;
+    padding-top: 14px;
+    border-top: 0.5pt solid #ccc;
+    font-size: 0.8em;
+    font-style: italic;
+    color: #666;
+  }
+
+  /* Print: shrink to 2 pages of A4. */
+  @media print {
+    @page { size: A4; margin: 16mm; }
+    body { background: #fff; }
+    main { max-width: none; box-shadow: none; padding: 0; }
+    .videos { display: none; }
+    h1 { font-size: 20pt; }
+    h2 { font-size: 12pt; }
+    aside, .callout { page-break-inside: avoid; }
+    .video-grid { display: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header class="site">
+  <div class="eyebrow">Nursing update · Kerry Specialist Palliative Care Unit</div>
+  <h1>PCOC Version 4
+    <span class="sub">ESAS PCOC and the 4AT</span>
+  </h1>
+  <p class="lede">
+    The two clinical changes in <span class="smallcaps">v4</span> that affect
+    nursing practice in this service: a new symptom assessment tool, and a
+    routine delirium item that may prompt a 4AT screen. Watch the videos and
+    read the reference handout below.
+  </p>
+</header>
+
+<section class="videos">
+<h2>Videos</h2>
+
+<h3 class="video_section">Walkthrough</h3>
+<div class="video-grid">
+  <div class="video-card">
+    <video controls preload="metadata">
+      <source src="videos/pcoc_v4_kerry_walkthrough.mp4" type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+    <h3>Kerry walkthrough</h3>
+    <p>The full slide-by-slide explanation of PCOC V4 ESAS PCOC and the 4AT, recorded for KSPCU.</p>
+  </div>
+</div>
+
+<h3 class="video_section">Delirium</h3>
+<div class="video-grid">
+  <div class="video-card">
+    <video controls preload="metadata">
+      <source src="videos/4AT_explainer.mp4" type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+    <h3>4AT explainer</h3>
+    <p>Two-minute primer on the four components of the 4AT, scoring, and cut-points.</p>
+  </div>
+
+  <div class="video-card">
+    <video controls preload="metadata">
+      <source src="videos/delirium_awareness.mp4" type="video/mp4">
+      Your browser does not support video playback.
+    </video>
+    <h3>Delirium awareness</h3>
+    <p>Recognising delirium in palliative care, including the easy-to-miss hypoactive presentation.</p>
+  </div>
+
+  <div class="video-card">
+    <div class="placeholder">PINCHES ME video to be added</div>
+    <h3>PINCHES ME</h3>
+    <p>Working through reversible causes of delirium using the HSE delirium booklet mnemonic. Coming when the booklet is to hand.</p>
+  </div>
+</div>
+</section>
+
+<section>
+<h2>Reference handout</h2>
+<p>
+The same content as the printable handout, sized for screen reading. Keep
+this open during the video walkthrough or refer back to it on the ward.
+<aside>
+  The Lansky Play Performance Scale is included in the V4 manual as a
+  paediatric alternative to AKPS. Not relevant to adult palliative care
+  here, but worth knowing it exists.
+</aside>
+</p>
+</section>
+
+<section>
+<h2>ESAS PCOC essentials</h2>
+
+<div class="callout">
+  <strong class="caps">From distress to severity.</strong> SAS asked: <em>How
+  much distress is your X causing you?</em> ESAS PCOC asks: <em>How problematic
+  is X for you?</em> The score is severity as problem, not distress.
+</div>
+
+<p>
+Patient rated severity over the last 24 hours, 0&ndash;10. Replaces
+<span class="smallcaps">sas</span>. Eleven symptoms plus an <em>Other</em>
+slot. Order is fixed: physical first, psychological next, wellbeing last as
+a global question.
+</p>
+
+<ul class="symptoms">
+  <li>Pain</li>
+  <li>Tiredness</li>
+  <li>Drowsiness</li>
+  <li>Nausea</li>
+  <li><span class="reverse">Appetite</span></li>
+  <li>Shortness of breath</li>
+  <li>Constipation</li>
+  <li><span class="reverse">Sleep</span></li>
+  <li><span class="new_mark">Depression</span></li>
+  <li><span class="new_mark">Anxiety</span></li>
+  <li><span class="reverse new_mark">Wellbeing</span></li>
+  <li>Other (D dry/sore mouth · I itch · S swallowing · Ot other · N none)</li>
+</ul>
+<p class="legend">
+* reverse scored. &nbsp; <strong style="font-weight:600;">Bold</strong>: new in V4 (not in SAS). &nbsp; Enter N/A if any item is not assessed.
+</p>
+
+<aside>
+  Reverse scored items (appetite, sleep, wellbeing): 0 means <em>best
+  possible</em>, not <em>absent</em>. Terminal-phase patient with no appetite
+  who is not troubled by it scores 0/10. Elicit ratings in conversation,
+  not by asking for a number on demand.
+</aside>
+</section>
+
+<section>
+<h2>The patient facing scale</h2>
+<p>
+What we hand to the patient: six colour zones, four descriptors, six smiley
+anchors. The ESAS asks: <em>What best describes how you felt during the last
+24 hours?</em> A family member, carer or staff member can help if needed.
+</p>
+<img class="scale_image" src="smileys.pdf"
+     onerror="this.onerror=null; this.src='smileys_print.png';"
+     alt="Patient facing ESAS scale">
+</section>
+
+<section>
+<h2>Rated by, and response thresholds</h2>
+
+<p>
+<strong>Rated by</strong> records who scored: <strong>P</strong> patient
+(preferred) · <strong>F</strong> family or carer · <strong>C</strong>
+clinician (only if no family or carer is available) · <strong>O</strong>
+other. A proxy rates from the <em>patient's</em> perspective, not their own.
+</p>
+
+<div class="scale_kerry">
+  <div class="ticks">
+    <span class="z0">0</span>
+    <span class="z1">1</span><span class="z1">2</span><span class="z1">3</span>
+    <span class="z2">4</span><span class="z2">5</span>
+    <span class="z3">6</span><span class="z3">7</span>
+    <span class="z4">8</span><span class="z4">9</span>
+    <span class="z5">10</span>
+  </div>
+  <div class="actions">
+    <div><strong>0&ndash;3</strong> Anticipate &amp; monitor. Modify the plan as required.</div>
+    <div><strong>4&ndash;7</strong> Review, intervene, refer.</div>
+    <div><strong>8&ndash;10</strong> Urgent. Same shift response.</div>
+  </div>
+</div>
+</section>
+
+<section>
+<h2>Delirium presence on the PCOC form</h2>
+
+<p>
+The PCOC form now asks one delirium question on every assessment:
+<strong>Is delirium present? Yes / No / Not Assessed.</strong>
+Clinician rated, on observation of the patient's attention, awareness and
+cognition. <em>Definition (Manual p.20):</em> an acute and fluctuating
+disturbance in attention, awareness and cognition that often reflects an
+underlying medical, psychological or pharmacological cause.
+</p>
+<p>
+<em>Why it matters.</em> Delirium is potentially reversible with timely
+management. Without structured screening, early detection is poor and many
+cases are missed, particularly the hypoactive presentation, which is easy to
+overlook. Recording delirium in PCOC V4 is the prompt to act on it
+[PINCHES ME, see further information].
+</p>
+</section>
+
+<section>
+<h2>4AT: quick reference</h2>
+
+<div class="callout">
+  <strong class="caps">When to use.</strong> The 4AT is a <em>screening</em>
+  tool, not a monitoring tool. It is not necessary to repeat the 4AT on every
+  assessment once delirium is established. Use it when you are uncertain
+  whether delirium is present.
+  <strong>Exception:</strong> if terminal delirium or terminal agitation has
+  been confirmed by a senior clinician, the 4AT is not required.
+</div>
+
+<table class="fourat">
+  <thead><tr><th>Component</th><th>What you do</th><th>Score</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>Alertness</td>
+      <td>Observe on initial approach. If asleep, wake with speech or gentle touch.</td>
+      <td>
+        <div class="score_stack">
+          <div><span class="num">0</span><span class="lbl">Normal</span></div>
+          <div><span class="num">4</span><span class="lbl">Clearly abnormal</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>AMT4</td>
+      <td>Age, date of birth, name of this place, current year.</td>
+      <td>
+        <div class="score_stack">
+          <div><span class="num">0</span><span class="lbl">No mistakes</span></div>
+          <div><span class="num">1</span><span class="lbl">One mistake</span></div>
+          <div><span class="num">2</span><span class="lbl">Two or more, or no meaningful response</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Attention</td>
+      <td>Months of the year backwards from December. One prompt allowed.</td>
+      <td>
+        <div class="score_stack">
+          <div><span class="num">0</span><span class="lbl">Seven or more correct</span></div>
+          <div><span class="num">1</span><span class="lbl">Fewer than seven, or refusal</span></div>
+          <div><span class="num">2</span><span class="lbl">Cannot attempt</span></div>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Acute change</td>
+      <td>Significant change in alertness, cognition, paranoia or hallucinations
+          over the last 2 weeks, evident in the last 24 hours.</td>
+      <td>
+        <div class="score_stack">
+          <div><span class="num">0</span><span class="lbl">No evidence of change</span></div>
+          <div><span class="num">4</span><span class="lbl">Clear evidence</span></div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="cuts">
+  <strong>Total 0&ndash;12.</strong>
+  <span class="pill red">4 or more</span> possible delirium &nbsp;
+  <span class="pill amber">1 to 3</span> cognitive impairment without clear delirium &nbsp;
+  <span class="pill green">0</span> delirium unlikely. &nbsp;
+  <em style="color:#555;">A positive 4AT is not diagnostic. Clinical judgement remains essential.</em>
+</div>
+</section>
+
+<section>
+<h2>Self check: four scenarios</h2>
+
+<table class="scenarios">
+  <thead><tr><th>#</th><th>Scenario &amp; question</th><th>Answer</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>i</td>
+      <td><em>Caoimhe, 72, motor neurone disease, seen weekly at home.</em>
+          ESAS today: pain 1, tiredness 4, sleep 3, others 2 or below. She self rates.
+          What does sleep 3 mean? What phase, what response?</td>
+      <td>Sleep 3 is mildly poor. Sleep is reverse scored: 0 means best possible.
+          Stable phase, no plan of care change. Anticipate and monitor.
+          Tiredness 4 sits in the moderate band on its own and prompts a symptom
+          review. Rated by: <strong>P</strong>.</td>
+    </tr>
+    <tr>
+      <td>ii</td>
+      <td><em>Brendan, 79, advanced heart failure, day 3 in the unit.</em>
+          Pleasant, chatty. ESAS: pain 2, tiredness 3, sleep 2, others 2 or below.
+          Asked about wellbeing he says &ldquo;a 7, I'm doing alright.&rdquo;
+          Do you record 7?</td>
+      <td>No. Wellbeing is a <strong>global</strong> question (how the patient
+          feels overall) and is reverse scored: 0 = best wellbeing, 10 = worst.
+          He feels well, so the score is low: 2 or 3. Recheck with the patient
+          scale; the smiling face is on the left at 0.</td>
+    </tr>
+    <tr>
+      <td>iii</td>
+      <td><em>Aoife, 84, advanced ovarian cancer, day 4 in unit, intermittently
+          agitated. Daughter at the bedside.</em> Is delirium present? Do you
+          4AT? Who rates the ESAS?</td>
+      <td>Delirium present: <strong>Yes</strong>, on clinician judgement.
+          4AT not needed once delirium is clinically clear. Daughter rates the
+          ESAS from her mother's perspective. Rated by: <strong>F</strong>.
+          Phase already terminal. Adjust the plan to manage agitation in line
+          with goals of care.</td>
+    </tr>
+    <tr>
+      <td>iv</td>
+      <td><em>Seamus, 68, advanced pancreatic cancer, &ldquo;a bit vague&rdquo; per the team.</em>
+          You are unsure whether he is delirious. 4AT: alertness 0, AMT4 1,
+          attention 2, acute change 4. What is the score? What next?</td>
+      <td>Total 7. Possible delirium. Document delirium present:
+          <strong>Yes</strong> on the PCOC form. Communicate to MDT. Identify
+          and treat reversible causes in line with goals of care (medication
+          review, hydration, sleep, environment, sensory aids). Reassess
+          clinically. Repeating the 4AT is not necessary once delirium is
+          established.</td>
+    </tr>
+  </tbody>
+</table>
+</section>
+
+<footer class="site">
+  Kerry Specialist Palliative Care Unit ·
+  Sources: PCOC V4 Clinical Manual (1 Nov 2025); FAQ ESAS PCOC; FAQ Delirium;
+  V4 Inpatient Unit Form v1.1.
+  &nbsp;|&nbsp; Coming next: PINCHES ME video, once the HSE delirium booklet is to hand.
+</footer>
+
+</main>
+</body>
+</html>
