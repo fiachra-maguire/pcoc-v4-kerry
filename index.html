@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PCOC Version 4: ESAS PCOC and the 4AT — Kerry Specialist Palliative Care Unit</title>
+<title>PCOC Version 4: ESAS and the 4AT — Kerry Specialist Palliative Care Unit</title>
 <style>
   /* Web-first layout. Print styles preserved at the bottom. */
 
@@ -144,6 +144,88 @@
     max-width: 720px;
   }
   .callout strong.caps { font-variant: small-caps; letter-spacing: 0.05em; }
+
+  /* Shift callout (from-distress-to-severity) */
+  .shift_callout {
+    border: 0.5pt solid #c4d5cf;
+    border-left: 3pt solid #2B6455;
+    background: #f6faf8;
+    padding: 18px 22px;
+    margin: 0.8em 0 1em 0;
+    max-width: 720px;
+  }
+  .shift_callout .shift_heading {
+    font-variant: small-caps;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    font-size: 1.15em;
+    color: #2B6455;
+    margin-bottom: 14px;
+  }
+  .shift_diagram {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 12px;
+    align-items: stretch;
+    margin-bottom: 16px;
+  }
+  .shift_card {
+    border: 0.5pt solid #ccc;
+    background: #fff;
+    padding: 10px 12px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .shift_card .shift_label {
+    font-variant: small-caps;
+    letter-spacing: 0.08em;
+    font-weight: 600;
+    font-size: 0.85em;
+    color: #666;
+  }
+  .shift_card.old .shift_label::after { content: " · was"; font-weight: 400; font-style: italic; }
+  .shift_card.new {
+    border-color: #2B6455;
+    background: #fff;
+  }
+  .shift_card.new .shift_label { color: #2B6455; }
+  .shift_card.new .shift_label::after { content: " · now"; font-weight: 400; font-style: italic; color: #2B6455; }
+  .shift_card .shift_q {
+    font-style: italic;
+    color: #222;
+    font-size: 0.95em;
+    line-height: 1.4;
+  }
+  .shift_card.old .shift_q { color: #888; }
+  .shift_arrow {
+    align-self: center;
+    font-size: 1.6em;
+    color: #2B6455;
+    font-weight: 700;
+  }
+  @media (max-width: 540px) {
+    .shift_diagram { grid-template-columns: 1fr; }
+    .shift_arrow { transform: rotate(90deg); align-self: center; }
+  }
+  .shift_key {
+    font-size: 1.15em;
+    font-weight: 600;
+    color: #2B6455;
+    text-align: center;
+    margin: 4px 0 6px 0;
+    padding: 6px 0;
+    border-top: 0.4pt solid #c4d5cf;
+    border-bottom: 0.4pt solid #c4d5cf;
+  }
+  .shift_clarify {
+    font-size: 0.95em;
+    font-style: italic;
+    color: #444;
+    text-align: center;
+    margin: 6px 0 0 0;
+  }
 
   /* Tables */
   table { border-collapse: collapse; width: 100%; font-size: 0.9em; margin: 0.4em 0 0.7em 0; }
@@ -359,12 +441,25 @@
 </section>
 
 <section>
-<h2>ESAS PCOC essentials</h2>
+<h2>ESAS-PCOC Essentials</h2>
 
-<div class="callout">
-  <strong class="caps">From distress to severity.</strong> SAS asked: <em>How
-  much distress is your X causing you?</em> ESAS PCOC asks: <em>How problematic
-  is X for you?</em> The score is severity as problem, not distress.
+<div class="shift_callout">
+  <div class="shift_heading">From distress to severity</div>
+
+  <div class="shift_diagram">
+    <div class="shift_card old">
+      <div class="shift_label">SAS</div>
+      <div class="shift_q">&ldquo;How much distress is your X causing you?&rdquo;</div>
+    </div>
+    <div class="shift_arrow">&rarr;</div>
+    <div class="shift_card new">
+      <div class="shift_label">ESAS</div>
+      <div class="shift_q">&ldquo;How problematic is X for you?&rdquo;</div>
+    </div>
+  </div>
+
+  <div class="shift_key">&ldquo;How problematic is X for you?&rdquo;</div>
+  <div class="shift_clarify">The score is severity of a problem, not the distress caused by it.</div>
 </div>
 
 <p>
