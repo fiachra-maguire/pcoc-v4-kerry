@@ -27,9 +27,24 @@
   }
 
   header.site {
-    border-bottom: 0.5pt solid #ccc;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    border-bottom: 1.5pt solid #2B6455;
     padding-bottom: 16px;
     margin-bottom: 24px;
+  }
+  header.site .title_block { flex: 1; min-width: 0; }
+  .hse_logo {
+    width: 90px;
+    height: auto;
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+  @media (max-width: 540px) {
+    header.site { flex-direction: column-reverse; }
+    .hse_logo { width: 70px; align-self: flex-end; }
   }
   .eyebrow {
     font-size: 0.85em; font-style: italic; color: #666;
@@ -42,8 +57,9 @@
   h2 {
     font-weight: 400; font-size: 1.15em;
     font-variant: small-caps; letter-spacing: 0.05em;
+    color: #2B6455;
     margin: 1.6em 0 0.4em 0;
-    border-bottom: 0.4pt solid #888;
+    border-bottom: 0.6pt solid #2B6455;
     padding-bottom: 2px;
   }
   h3 {
@@ -59,9 +75,9 @@
     font-variant: small-caps;
     letter-spacing: 0.06em;
     font-size: 1em;
-    color: #333;
+    color: #2B6455;
     margin: 1.2em 0 0.3em 0;
-    border-bottom: 0.3pt solid #ccc;
+    border-bottom: 0.4pt solid #c4d5cf;
     padding-bottom: 2px;
   }
   .video-grid {
@@ -227,8 +243,9 @@
     max-width: 720px;
   }
   .form_card {
-    border: 0.5pt solid #ccc;
-    background: #fafafa;
+    border: 0.5pt solid #c4d5cf;
+    border-left: 2pt solid #2B6455;
+    background: #f6faf8;
     padding: 12px 14px;
     border-radius: 2px;
     display: flex;
@@ -251,14 +268,14 @@
     align-self: flex-start;
     display: inline-block;
     margin-top: 4px;
-    padding: 4px 10px;
+    padding: 4px 12px;
     font-size: 0.85em;
-    background: #2a4d3a;
+    background: #2B6455;
     color: #fff;
     text-decoration: none;
     border-radius: 2px;
   }
-  .form_card a.download:hover { background: #1f3a2b; }
+  .form_card a.download:hover { background: #1f4a40; }
 
   em.term { font-style: italic; }
   span.smallcaps { font-variant: small-caps; letter-spacing: 0.05em; }
@@ -266,7 +283,7 @@
   footer.site {
     margin-top: 32px;
     padding-top: 14px;
-    border-top: 0.5pt solid #ccc;
+    border-top: 1pt solid #2B6455;
     font-size: 0.8em;
     font-style: italic;
     color: #666;
@@ -289,16 +306,19 @@
 <main>
 
 <header class="site">
-  <div class="eyebrow">Kerry Specialist Palliative Care Service</div>
-  <h1>PCOC Version 4
-    <span class="sub">ESAS and the 4AT</span>
-  </h1>
-  <p class="lede">
-    The two clinical changes in <span class="smallcaps">PCOC v4</span> that affect
-    nursing and medical practice in this service: a new symptom assessment tool, and a
-    routine delirium item that may prompt a 4AT screen.
-    Watch the videos and read the reference material below.
-  </p>
+  <div class="title_block">
+    <div class="eyebrow">Kerry Specialist Palliative Care Service</div>
+    <h1>PCOC Version 4
+      <span class="sub">ESAS and the 4AT</span>
+    </h1>
+    <p class="lede">
+      The two clinical changes in <span class="smallcaps">PCOC v4</span> that affect
+      nursing and medical practice in this service: a new symptom assessment tool, and a
+      routine delirium item that may prompt a 4AT screen.
+      Watch the videos and read the reference material below.
+    </p>
+  </div>
+  <img class="hse_logo" src="hse_logo.png" alt="HSE — Health Service Executive">
 </header>
 
 <section class="videos">
